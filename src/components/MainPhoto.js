@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const MainPhotoDiv = styled.div`
+`
+
 const PhotoExpDiv = styled.div`
 display:flex;
 width:40%;
@@ -14,7 +17,7 @@ padding: 2% 2%;
 box-shadow: 10px 5px 5px #51B6DB;
 margin-bottom: 10%;
 `
-const explanationP = styled.p`
+const ExplanationP = styled.p`
 color: white;
 z-index: 1;
 `
@@ -27,13 +30,15 @@ z-index: 7;
 
 const MainPhoto = props => {
     return (
-        <div className="main-photo">
+        <MainPhotoDiv>
            <PotdImg src ={props.mainPhoto.hdurl}></PotdImg>
            <PhotoExpDiv>
-           <explanationP>🚀  {props.photoExp.explanation}  🚀</explanationP>
+           <ExplanationP>🚀  {props.photoExp.explanation}  🚀</ExplanationP>
            </PhotoExpDiv>
-        </div>
+        </MainPhotoDiv>
     )
 }
+
+
 
 export default MainPhoto;

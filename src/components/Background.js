@@ -81,8 +81,6 @@ z-index: 3;
 -o-animation:  150s linear infinite;
 -webkit-animation: ${webkitKf}  150s linear infinite;
 animation: ${kf}  150s linear infinite;
-
-
 `
 const Background = props => {
 

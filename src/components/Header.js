@@ -17,7 +17,7 @@ z-index: 1;
 const Header = props => {
 
     return (
-        <div className='header'>
+        <div>
             <StyledH1>NASA Super Awesome Exciting Photo of the Day!!</StyledH1>
             <StyledH2>{props.headerTitle.title}</StyledH2>
             <StyledP>{props.date.date}</StyledP>
